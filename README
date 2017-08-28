@@ -1,0 +1,45 @@
+Instructions to run Twitter pos tagger project
+-To run baseline tagger.
+
+Environment: python2.7 should be installed
+
+1)Open command prompt, change the directory to the folder I have uploaded.
+
+	cd <parent_folders>/Twitter_tagger
+
+2) To run the code, please execute the following line.
+
+	python postagger_mostprobable.py dataset\tweet_train dataset\tweet_test
+
+3) Expected output:
+	Accuracy in training [1000 sentences]: 92.9480164159
+	Accuracy in testing [500 sentences]: 75.1258389262
+
+Instructions to run bigram HMM for Twitter POS tagging.
+
+1)Change the directory to the folder I have uploaded.
+
+	cd <parent_folders>/Twitter_tagger
+
+2) To run the code, please execute the following line.
+
+	python postagger_bigrams.py dataset\tweet_train dataset\tweet_test
+
+3) Expected output:
+	Creating Model, takes few secs..
+	Model created in 8 secs
+
+	Tagging training sentences..
+	Accuracy in training [1000 sentences]: 95.560875513
+	Time took to tag 3.38 secs
+
+	Tagging testing sentences..
+	Accuracy in testing [500 sentences]: 86.4093959732
+	Took 1.73 secs
+
+Error Analysis:
+1)The error analysis code is present in 'error_analysis.ipynb' file.
+2)To run error analysis code, python notebook, pandas package should be installed.
+
+Other:
+1) I have uploaded the 'data_preparation.py' python file, which converts the raw(original) twitter data into format readable by the program.
